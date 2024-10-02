@@ -1,0 +1,134 @@
+.container {
+    width: 100%;
+    background-color: var(--light);
+    min-height: calc(100vh - 136px);
+    border-radius: 5px;
+}
+
+.container .containerCard{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1380px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.containerCard .card {
+    width: 300px;
+    height: 400px;
+    background-color: var(--grey);
+    box-shadow: 0 2px 2px 0 var(--dark);
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.containerCard .card .imgCard{
+    width: 100%;    
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.card .imgCard img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 var(--light);
+}
+
+.container .card .buttomCard{
+    height: 50%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    padding: 10px 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.card .buttomCard .title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card .buttomCard .feature{
+    border-top: 1.5px dashed  var(--dark);
+    height: 50%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.feature .featureItem{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.featureItem p,
+.featureItem > div{
+    width: 45%;
+}
+
+.featureItem > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.featureItem div button{
+    appearance: none;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    font-size: large;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.featureItem .valueFeatureItem{
+    width: 100px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.featureItem .valueFeatureItem span{
+    font-size: small;
+}
+
+.featureItem .valueFeatureItem strong{
+    font-weight: 500;
+}
+
+
+.buttomCard .buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 10px;
+}
+
+.buttomCard .buttonContainer button{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttomCard .buttonContainer button.disabled{
+    display: none;
+    background-color: red;
+}
