@@ -124,7 +124,7 @@ function ProduitCard({ produit }) {
           ))}
         </div>
         <div className={styles.buttonContenaire}>
-          <button onClick={handleAddToCart} disabled={!allOptionsSelected()}>Ajouter dans le panie</button>
+          <button onClick={handleAddToCart} disabled={!allOptionsSelected()}>Ajouter dans le panier</button>
         </div>
       </div>
     </div>
