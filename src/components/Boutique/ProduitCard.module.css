@@ -26,22 +26,23 @@
 .produitCard .containerBottom{
     height: 50%;
     overflow: hidden;
+    position: relative;
 }
 
 .produitCard .containerBottom .title{
-    padding-top: 5px;
+    padding: 10px 0;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-.containerBottom .title h2 {
+.containerBottom .title h3 {
     color: #333;
     font-weight: 400;
 }
 
-.containerBottom .title h3 {
+.containerBottom .title h4 {
     color: #333;
     font-weight: 300;
     max-width: 75%;
@@ -56,25 +57,77 @@
 
 .containerBottom .title .prix span{
     color: #555;
+    font-weight: 200;
+    font-size: small;
 }
 
-.produitCard p {
-    margin: 5px 0;
-    color: #555;
+.containerBottom .containerFeatures{
+ width: 100%;
+ height: 50%;
+ padding: 5px 0;
+ border-top: 1.5px dashed #333;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
 }
 
-.produitCard h3,
-.produitCard h4 {
-    /* font-size: 18px;
-    margin-top: 15px; */
+.containerBottom .containerFeatures .features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.containerFeatures .features .valueFeatures,
+.containerFeatures .features .titleFeatures{
+    min-width: 25%;
+    max-width: 75%;
+}
+
+.features .titleFeatures h4{
     color: #444;
 }
 
-.produitCard label {
-    margin: 5px;
+.containerFeatures .features .valueFeatures{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.produitCard .valueFeatures label {
+    margin-right: 10px; 
     display: inline-block;
+    color: #333;
 }
 
 .produitCard input[type="checkbox"] {
-    margin-right: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.produitCard input[type="checkbox"]:disabled{
+    cursor: auto;
+}
+
+.containerBottom .buttonContenaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.containerBottom .buttonContenaire button{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
