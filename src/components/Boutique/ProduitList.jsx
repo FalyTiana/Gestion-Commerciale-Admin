@@ -6,6 +6,7 @@ const produits = [
         nom: "T-shirt",
         image: "https://via.placeholder.com/200",
         prix_unitaire: 20.0,
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repellendus porro reprehenderit dolor, mollitia, iure culpa voluptatum officiis maiores assumenda nesciunt ad eveniet modi autem corrupti quae. Libero, accusantium esse.",
         unites_de_mesure: [
             { nom: "Pièce", abbreviation: "pcs" }
         ],
@@ -28,6 +29,7 @@ const produits = [
         nom: "Pantalon",
         image: "https://via.placeholder.com/200",
         prix_unitaire: 35.0,
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repellendus porro reprehenderit dolor, mollitia, iure culpa voluptatum officiis maiores assumenda nesciunt ad eveniet modi autem corrupti quae. Libero, accusantium esse.",
         unites_de_mesure: [
             { nom: "Pièce", abbreviation: "pcs" }
         ],
@@ -45,6 +47,29 @@ const produits = [
                 image: "https://via.placeholder.com/150"
             }
         ]
+    },
+    {
+        nom: "T-shirt",
+        image: "https://via.placeholder.com/200",
+        prix_unitaire: 20.0,
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repellendus porro reprehenderit dolor, mollitia, iure culpa voluptatum officiis maiores assumenda nesciunt ad eveniet modi autem corrupti quae. Libero, accusantium esse.",
+        unites_de_mesure: [
+            { nom: "Pièce", abbreviation: "pcs" }
+        ],
+        variants: [
+            {
+                nom: "Variant 1",
+                caracteristiques: { couleur: "rouge", taille: "M" },
+                ajout_de_prix: 2.0,
+                image: "https://via.placeholder.com/150"
+            },
+            {
+                nom: "Variant 2",
+                caracteristiques: { couleur: "bleu", taille: "L" },
+                ajout_de_prix: 3.0,
+                image: "https://via.placeholder.com/150"
+            }
+        ]
     }
 ];
 
@@ -54,10 +79,10 @@ function ProduitList() {
     }
     return (
         <div className={styles.productsList}>
-        {produits.map((produit, index) => (
-          <ProduitCard key={index} produit={produit} />
-        ))}
-      </div>
+            {produits.map((produit, index) => (
+                <ProduitCard key={index} produit={produit} />
+            ))}
+        </div>
     )
 }
 

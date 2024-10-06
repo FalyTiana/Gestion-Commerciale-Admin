@@ -126,7 +126,7 @@
     justify-content: center;
 }
 
-.sidebar .sideMenu li a:hover{
+.sidebar .sideMenu li a:hover {
     background-color: var(--grey);
 }
 
@@ -162,7 +162,7 @@
     transition: all 0.3s ease;
 }
 
-.sidebar.close ~ .content nav {
+.sidebar.close~.content nav {
     left: 60px;
     width: calc(100% - 60px);
 }
